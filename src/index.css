@@ -31,6 +31,21 @@ code {
   font-family: 'Montserrat', sans-serif;
 }
 
+.backgroundAbout {
+  background: linear-gradient(
+    to bottom left,
+    #0e0f14,
+    #1e212d,
+    #1e212d,
+    #0e0f14 /* #9e7540,
+    #faf3e0,
+    #eabf9f,
+    #b68973,
+    #1e212d */
+  );
+  font-family: 'Montserrat', sans-serif;
+}
+
 .name {
   font-weight: 500;
 }
