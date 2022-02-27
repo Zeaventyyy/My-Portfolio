@@ -49,3 +49,7 @@ code {
 .name {
   font-weight: 500;
 }
+
+.email {
+  writing-mode: vertical-rl;
+}

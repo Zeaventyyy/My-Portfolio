@@ -1,7 +1,9 @@
 import React from 'react';
+import { ReactComponent as ZeavenLogo } from '../icons/zeavenlogo.svg';
 
 function Navbar() {
   const github = 'https://github.com/Zeaventyyy';
+
   return (
     <nav
       className="flex
@@ -15,49 +17,19 @@ function Navbar() {
     absolute
     w-full"
     >
-      <section>
+      <section className="">
         <a href="/">
-          <svg
-            className="
-                inline
+          <ZeavenLogo
+            className="inline
                 self-center
                 transform
                 hover:rotate-90
                 transition
                 duration-500
-
+                w-14
+                h-14
                 "
-            preserveAspectRatio="xMidYMid"
-            fill="white"
-            width="50"
-            height="50"
-            viewBox="0 0 470 470"
-          >
-            <path
-              d="M89.000,61.000 L89.000,56.000 L384.000,56.000 L384.000,61.000 L89.000,61.000 Z"
-              className="cls-1"
-            />
-            <path
-              d="M89.000,415.000 L89.000,410.000 L384.000,410.000 L384.000,415.000 L89.000,415.000 Z"
-              className="cls-1"
-            />
-            <path
-              d="M92.996,412.505 L89.004,409.495 L267.004,173.495 L270.996,176.505 L92.996,412.505 Z"
-              className="cls-1"
-            />
-            <path
-              d="M205.996,296.505 L202.004,293.495 L380.004,57.495 L383.996,60.505 L205.996,296.505 Z"
-              className="cls-1"
-            />
-            <path
-              d="M89.005,60.507 L92.995,57.493 L225.995,233.493 L222.005,236.507 L89.005,60.507 Z"
-              className="cls-1"
-            />
-            <path
-              d="M384.003,409.504 L379.997,412.496 L246.997,234.496 L251.003,231.504 L384.003,409.504 Z"
-              className="cls-1"
-            />
-          </svg>
+          />
         </a>
       </section>
 
