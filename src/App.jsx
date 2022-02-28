@@ -4,16 +4,20 @@ import Main from './landingpage/main';
 import About from './landingpage/about';
 import { ReactComponent as LinkedInIcon } from './icons/linkedin.svg';
 import { ReactComponent as GithubIcon } from './icons/github.svg';
+import Experience from './landingpage/experience';
 
 function App() {
   return (
     <div className="App ">
-      <div className="landingPage flex flex-col background h-screen">
+      <div className="flex flex-col background h-screen">
         <Navbar />
         <Main />
       </div>
-      <div className="about backgroundAbout h-screen">
+      <div className="backgroundAbout h-screen">
         <About />
+      </div>
+      <div className="background h-screen">
+        <Experience />
       </div>
       <div className="hidden md:block fixed bottom-0 left-20 ml-2">
         <ul className="flex flex-col justify-center items-center">
