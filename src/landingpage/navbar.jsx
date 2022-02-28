@@ -62,7 +62,7 @@ function Navbar() {
               px-5
             "
         >
-          Contact
+          Experience
         </a>
         <a
           href={github}
@@ -90,7 +90,7 @@ function Navbar() {
             duration-500
             px-5"
         >
-          Project
+          Contact
         </a>
       </section>
     </nav>
