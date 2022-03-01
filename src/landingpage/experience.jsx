@@ -74,38 +74,40 @@ function Experience() {
               </p>
               <p className="font-normal">@Clearmind Algorithmics Inc.</p>
               <p className="font-normal">November 2019 - March 2021</p>
-              <ul className="flex flex-col">
-                <li className="mt-4 mb-2">
-                  <p>Worked with a team to build new applications.</p>
-                </li>
-                <li>
-                  <p>
+              <div className="flex flex-col">
+                <ul className="list-disc list-outside ml-4 ">
+                  <li className="mt-4 mb-2">
+                    Worked with a team to build new applications.
+                  </li>
+                  <li>
                     Maintained existing applications (USSC Super Service App,
                     myTMC).
-                  </p>
-                </li>
+                  </li>
+                </ul>
                 <p className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
-              </ul>
+              </div>
             </div>
             <div className="hidden md:pl-10 grow">
               <p className="text-xl font-semibold mb-1">
                 Frontend Developer/Quality Assurance Intern
               </p>
-              <p className="text-xl font-semibold mb-1">Orange Apps.</p>
+              <p className="text-xl font-semibold mb-1">OrangeApps.</p>
               <p className="font-normal">January 2019 - March 2019</p>
-              <ul>
-                <li className="mt-4 mb-2">
-                  <p>
-                    Maintained and checked all the possible bugs in projects to
-                    be fixed.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Designed and built prototypes for company’s new projects.
-                  </p>
-                </li>
-              </ul>
+              <div className="flex flex-col">
+                <ul className="list-disc list-outside ml-4">
+                  <li className="mt-4 mb-2">
+                    <p>
+                      Maintained and checked all the possible bugs in projects
+                      to be fixed.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Designed and built prototypes for company’s new projects.
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
