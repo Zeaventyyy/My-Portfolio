@@ -89,7 +89,7 @@ function Experience() {
             </div>
             <div className="hidden md:pl-10 grow">
               <p className="text-xl font-semibold mb-1">
-                Frontend Developer/Quality Assurance
+                Frontend Developer/Quality Assurance Intern
               </p>
               <p className="text-xl font-semibold mb-1">Orange Apps.</p>
               <p className="font-normal">January 2019 - March 2019</p>
