@@ -10,19 +10,23 @@ function Experience() {
             <p className="flex-grow border-[1px] opacity-50 self-center" />
           </div>
           <div className="flex flex-col items-center md:flex-row md:items-start w-full">
-            <div className="flex flex-row md:flex-col items-start md:px-6 w-64 mr-4">
+            <div className="flex w-full flex-row md:flex-col items-start md:pl-6 md:mb-0 md:w-[17.25rem] mb-4">
               <button
                 className="hover:bg-black/25
                 hover:border-white
                 border-b-2
                 md:border-b-0
                 md:border-l-2 border-white/50
-              active:hover:border-white
-              active:hover:border-l-2
               active:transition
               active:duration-500
               transition
               duration-500
+              focus:border-b-2
+              focus:border-white
+              focus:bg-black/50
+              md:focus:border-l-2
+              md:focus:border-b-0
+              md:focus:border-white
               px-8
               py-2
               w-full
@@ -40,10 +44,15 @@ function Experience() {
                 border-b-2
                 md:border-b-0
                 md:border-l-2 border-white/50
-              active:hover:border-white
-              active:hover:border-l-2
+                focus:border-b-2
+                focus:border-white
               active:transition
               active:duration-500
+              focus:bg-black/50
+              md:focus:border-l-2
+              md:focus:border-white
+              md:focus:border-b-0
+              focus:md:
               transition
               duration-500
               px-8
@@ -57,9 +66,46 @@ function Experience() {
               >
                 Orange Apps
               </button>
+              <p className="hidden md:block border-[1px] opacity-50 self-end w-1/2 mt-8  " />
             </div>
-            <div className="grow">
-              <h1>Clearmind Algorithmics Inc.</h1>
+            <div className=" md:pl-10 grow">
+              <p className="text-xl font-semibold mb-1">
+                Associate Android Developer
+              </p>
+              <p className="font-normal">@Clearmind Algorithmics Inc.</p>
+              <p className="font-normal">November 2019 - March 2021</p>
+              <ul className="flex flex-col">
+                <li className="mt-4 mb-2">
+                  <p>Worked with a team to build new applications.</p>
+                </li>
+                <li>
+                  <p>
+                    Maintained existing applications (USSC Super Service App,
+                    myTMC).
+                  </p>
+                </li>
+                <p className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
+              </ul>
+            </div>
+            <div className="hidden md:pl-10 grow">
+              <p className="text-xl font-semibold mb-1">
+                Frontend Developer/Quality Assurance
+              </p>
+              <p className="text-xl font-semibold mb-1">Orange Apps.</p>
+              <p className="font-normal">January 2019 - March 2019</p>
+              <ul>
+                <li className="mt-4 mb-2">
+                  <p>
+                    Maintained and checked all the possible bugs in projects to
+                    be fixed.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Designed and built prototypes for company’s new projects.
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
