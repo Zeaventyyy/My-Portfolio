@@ -1,0 +1,18 @@
+.navbtn {
+  @apply h-full
+  flex
+  items-center
+  hover:border-white
+  border-b-2 border-transparent
+  transition
+  duration-500
+  px-5;
+}
+
+.hamburger {
+  @apply space-y-2;
+}
+
+.btn {
+  @apply w-8 h-0.5 bg-white;
+}
