@@ -7,17 +7,17 @@ function Experience() {
   return (
     <div className="h-full container mx-auto">
       <div className="flex flex-col sm:flex-row justify-center items-center h-full px-10 lg:w-[52rem] mx-auto ">
-        <section className="flex flex-col w-full text-white h-60">
+        <section className="flex flex-col w-full text-white justify-center md:justify-start md:h-60">
           <div className="flex justify-start mb-5 w-full">
             <p className="text-2xl mr-10 font-medium ">Where I’ve Worked</p>
             <p className="flex-grow border-[1px] opacity-50 self-center" />
           </div>
           <div className="flex flex-col items-center md:flex-row md:items-start w-full  ">
-            <div className="flex w-full flex-row md:flex-col items-start md:pl-6 md:mb-0 md:w-[17.25rem] mb-4">
+            <div className="flex w-full grow flex-row md:flex-col items-start md:pl-6 md:mb-0 md:w-[17.25rem] mb-4 ">
               <button
                 className={`${experience === 'cmai' ? styles.active : ''} ${
                   styles.btn
-                }`}
+                } border-r-2`}
                 type="button"
                 onClick={() => setExperience('cmai')}
               >
@@ -26,17 +26,18 @@ function Experience() {
               <button
                 className={`${
                   experience === 'orangeApps' ? styles.active : ''
-                } ${styles.btn}`}
+                } ${styles.btn} border-l-2`}
                 type="button"
                 onClick={() => setExperience('orangeApps')}
               >
                 Orange Apps
               </button>
-              <p className="hidden md:block border-[1px] opacity-50 self-end w-1/2 mt-8  " />
+
+              <span className="hidden md:block border-[1px] opacity-50 self-end w-1/2 mt-8  " />
             </div>
 
             {experience === 'cmai' ? (
-              <div className=" md:pl-10 grow animate-fade-in-down">
+              <div className="md:pl-10 animate-fade-in-down">
                 <p className="text-xl font-semibold mb-1">
                   Associate Android Developer
                 </p>
@@ -73,7 +74,7 @@ function Experience() {
                       Designed and built prototypes for company’s new projects.
                     </li>
                   </ul>
-                  <p className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
+                  <span className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
                 </div>
               </div>
             ) : null}

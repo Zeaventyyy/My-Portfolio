@@ -5,7 +5,8 @@
     md:border-b-0
     focus:border-b-2
     md:focus:border-b-0
-    focus:border-white
+    focus:border-b-white
+    md:focus:border-white/50
     md:border-l-2 border-white/50
   active:transition
   active:duration-500
@@ -14,11 +15,14 @@
   px-8
   py-2
   w-full
-  h-full
+  md:h-full
+  h-14
   text-center
-  md:text-left;
+  md:text-left
+  md:border-x-0
+  text-xs;
 }
 
 .btn.active {
-  @apply bg-black/50 md:border-l-2 focus:bg-black/50 md:focus:border-l-2 md:focus:border-white;
+  @apply bg-black/50 md:border-l-2 md:border-l-white focus:bg-black/50 md:focus:border-l-2 md:focus:border-white;
 }
