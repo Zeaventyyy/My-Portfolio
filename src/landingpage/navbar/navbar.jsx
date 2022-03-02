@@ -122,7 +122,7 @@ function Navbar() {
                         'block px-4 py-2 text-sm',
                       )}
                     >
-                      Work
+                      Project
                     </a>
                   )}
                 </Menu.Item>
