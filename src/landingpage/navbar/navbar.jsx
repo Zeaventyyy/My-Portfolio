@@ -27,6 +27,7 @@ function Navbar() {
     text-white
     uppercase
     absolute
+    h-36
     w-full"
     >
       <section className="">
@@ -44,15 +45,14 @@ function Navbar() {
           />
         </a>
       </section>
-
-      <section className="hidden md:flex items-center space-x-1">
-        <a href="/" className={` ${styles.navbtn}`}>
+      <section className="hidden md:flex md:flex-row h-full items-center">
+        <a href="/" className={`${styles.navbtn}`}>
           About
         </a>
-        <a href="/" className={` ${styles.navbtn}`}>
+        <a href="/" className={`${styles.navbtn}`}>
           Experience
         </a>
-        <a href={github} className={` ${styles.navbtn}`}>
+        <a href={github} className={`${styles.navbtn}`}>
           Github
         </a>
         <a href="/" className={` ${styles.navbtn}`}>

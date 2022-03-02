@@ -1,12 +1,5 @@
 .navbtn {
-  @apply h-full
-  flex
-  items-center
-  hover:border-white
-  border-b-2 border-transparent
-  transition
-  duration-500
-  px-5;
+  @apply flex items-center h-full hover:border-white border-b-2 border-transparent transition duration-500 px-5;
 }
 
 .hamburger {
