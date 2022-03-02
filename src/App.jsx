@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './landingpage/navbar';
+import Navbar from './landingpage/navbar/navbar';
 import Main from './landingpage/main';
 import About from './landingpage/about';
 import { ReactComponent as LinkedInIcon } from './icons/linkedin.svg';
