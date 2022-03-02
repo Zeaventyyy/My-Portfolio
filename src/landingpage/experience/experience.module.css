@@ -20,7 +20,7 @@
   text-center
   md:text-left
   md:border-x-0
-  text-xs;
+  text-sm;
 }
 
 .btn.active {
