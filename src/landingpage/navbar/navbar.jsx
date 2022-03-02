@@ -19,8 +19,9 @@ function Navbar() {
     <nav
       className="flex
     flex-row
-    px-5
-    sm:px-20
+    pl-8
+    pr-10
+    md:px-20
     justify-between
     items-center
     py-8
@@ -39,8 +40,10 @@ function Navbar() {
                 hover:rotate-90
                 transition
                 duration-500
-                w-14
-                h-14
+                h-10
+                w-10
+                md:w-14
+                md:h-14
                 "
           />
         </a>
@@ -62,7 +65,7 @@ function Navbar() {
       <section className="md:hidden items-center space-x-1">
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex justify-center w-full rounded-md shadow-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100">
+            <Menu.Button className="inline-flex justify-center w-full rounded-md shadow-sm py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100">
               <button type="button" onClick={toggleMenu}>
                 <div className={`${styles.hamburger}`}>
                   <div className={`${styles.btn}`} />
