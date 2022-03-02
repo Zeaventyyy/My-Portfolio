@@ -5,6 +5,7 @@ import About from './landingpage/about';
 import { ReactComponent as LinkedInIcon } from './icons/linkedin.svg';
 import { ReactComponent as GithubIcon } from './icons/github.svg';
 import Experience from './landingpage/experience/experience';
+import Project from './landingpage/project/project';
 
 function App() {
   const github = 'https://github.com/Zeaventyyy';
@@ -37,6 +38,9 @@ function App() {
             <div className="h-40 w-0 border-2 opacity-50" />
           </li>
         </ul>
+      </div>
+      <div className="backgroundAbout h-screen">
+        <Project />
       </div>
     </div>
   );
