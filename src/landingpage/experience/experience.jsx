@@ -19,7 +19,7 @@ function Experience() {
               <button
                 className={`${experience === 'cmai' ? styles.active : ''} ${
                   styles.btn
-                } border-r-2`}
+                }`}
                 type="button"
                 onClick={() => setExperience('cmai')}
               >
@@ -28,7 +28,7 @@ function Experience() {
               <button
                 className={`${
                   experience === 'orangeApps' ? styles.active : ''
-                } ${styles.btn} border-l-2`}
+                } ${styles.btn}`}
                 type="button"
                 onClick={() => setExperience('orangeApps')}
               >
@@ -40,10 +40,10 @@ function Experience() {
 
             {experience === 'cmai' ? (
               <div className="md:pl-10 animate-fade-in-down">
-                <p className="text-xl font-semibold mb-1">
+                <p className="text-lg md:text-xl font-semibold mb-1">
                   Associate Android Developer
                 </p>
-                <p className="font-normal">@Clearmind Algorithmics Inc.</p>
+                <p className="font-normal">Clearmind Algorithmics Inc.</p>
                 <p className="font-normal">November 2019 - March 2021</p>
                 <div className="flex flex-col">
                   <ul className="list-disc list-outside ml-4 ">
@@ -61,10 +61,10 @@ function Experience() {
             ) : null}
             {experience === 'orangeApps' ? (
               <div className="md:pl-10 grow animate-fade-in-down">
-                <p className="text-xl font-semibold mb-1">
+                <p className="text-lg md:text-xl font-semibold mb-1">
                   Frontend Developer/Quality Assurance Intern
                 </p>
-                <p className="text-xl font-semibold mb-1">OrangeApps.</p>
+                <p className="font-normal">OrangeApps</p>
                 <p className="font-normal">January 2019 - March 2019</p>
                 <div className="flex flex-col">
                   <ul className="list-disc list-outside ml-4">
