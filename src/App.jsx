@@ -7,6 +7,8 @@ import { ReactComponent as GithubIcon } from './icons/github.svg';
 import Experience from './landingpage/experience/experience';
 
 function App() {
+  const github = 'https://github.com/Zeaventyyy';
+
   return (
     <div className="App ">
       <div className="flex flex-col background h-screen">
@@ -22,10 +24,14 @@ function App() {
       <div className="hidden md:block fixed bottom-0 left-20 ml-2">
         <ul className="flex flex-col justify-center items-center">
           <li className="mb-8 ">
-            <LinkedInIcon className="fill-white opacity-50 w-8 h-8 hover:opacity-100 transition duration-300" />
+            <a href="https://www.linkedin.com/in/zeaven-jovertte-manalastas-5297a7188/">
+              <LinkedInIcon className="fill-white opacity-50 w-8 h-8 hover:opacity-100 transition duration-300" />
+            </a>
           </li>
           <li className="mb-8">
-            <GithubIcon className="fill-white opacity-50 w-8 h-8 hover:opacity-100 transition duration-300" />
+            <a href={github}>
+              <GithubIcon className="fill-white opacity-50 w-8 h-8 hover:opacity-100 transition duration-300" />
+            </a>
           </li>
           <li>
             <div className="h-40 w-0 border-2 opacity-50" />
