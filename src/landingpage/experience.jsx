@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Experience() {
+  const [setActive, setActiveCmai] = useState(true);
+  const [setActiveOrangeApps, setActiveOrange] = useState(false);
+
+  const showCmai = () => {
+    setActiveCmai(true);
+    setActiveOrange(false);
+  };
+  const showOrangeApps = () => {
+    setActiveCmai(false);
+    setActiveOrange(true);
+  };
+
   return (
     <div className="h-full container mx-auto">
       <div className="flex flex-col sm:flex-row justify-center items-center h-full px-10 lg:w-[52rem] mx-auto ">
@@ -35,6 +47,7 @@ function Experience() {
               md:text-left
               "
                 type="button"
+                onClick={showCmai}
               >
                 CMAI
               </button>
@@ -63,52 +76,55 @@ function Experience() {
               md:text-left
               "
                 type="button"
+                onClick={showOrangeApps}
               >
                 Orange Apps
               </button>
               <p className="hidden md:block border-[1px] opacity-50 self-end w-1/2 mt-8  " />
             </div>
-            <div className=" md:pl-10 grow">
-              <p className="text-xl font-semibold mb-1">
-                Associate Android Developer
-              </p>
-              <p className="font-normal">@Clearmind Algorithmics Inc.</p>
-              <p className="font-normal">November 2019 - March 2021</p>
-              <div className="flex flex-col">
-                <ul className="list-disc list-outside ml-4 ">
-                  <li className="mt-4 mb-2">
-                    Worked with a team to build new applications.
-                  </li>
-                  <li>
-                    Maintained existing applications (USSC Super Service App,
-                    myTMC).
-                  </li>
-                </ul>
-                <p className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
+
+            {setActive ? (
+              <div className=" md:pl-10 grow">
+                <p className="text-xl font-semibold mb-1">
+                  Associate Android Developer
+                </p>
+                <p className="font-normal">@Clearmind Algorithmics Inc.</p>
+                <p className="font-normal">November 2019 - March 2021</p>
+                <div className="flex flex-col">
+                  <ul className="list-disc list-outside ml-4 ">
+                    <li className="mt-4 mb-2">
+                      Worked with a team to build new applications.
+                    </li>
+                    <li>
+                      Maintained existing applications (USSC Super Service App,
+                      myTMC).
+                    </li>
+                  </ul>
+                  <p className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
+                </div>
               </div>
-            </div>
-            <div className="hidden md:pl-10 grow">
-              <p className="text-xl font-semibold mb-1">
-                Frontend Developer/Quality Assurance Intern
-              </p>
-              <p className="text-xl font-semibold mb-1">OrangeApps.</p>
-              <p className="font-normal">January 2019 - March 2019</p>
-              <div className="flex flex-col">
-                <ul className="list-disc list-outside ml-4">
-                  <li className="mt-4 mb-2">
-                    <p>
+            ) : null}
+            {setActiveOrangeApps ? (
+              <div className="md:pl-10 grow">
+                <p className="text-xl font-semibold mb-1">
+                  Frontend Developer/Quality Assurance Intern
+                </p>
+                <p className="text-xl font-semibold mb-1">OrangeApps.</p>
+                <p className="font-normal">January 2019 - March 2019</p>
+                <div className="flex flex-col">
+                  <ul className="list-disc list-outside ml-4">
+                    <li className="mt-4 mb-2">
                       Maintained and checked all the possible bugs in projects
                       to be fixed.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
+                    </li>
+                    <li>
                       Designed and built prototypes for company’s new projects.
-                    </p>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                  <p className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
         </section>
       </div>
