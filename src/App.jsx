@@ -4,7 +4,7 @@ import Main from './landingpage/main';
 import About from './landingpage/about';
 import { ReactComponent as LinkedInIcon } from './icons/linkedin.svg';
 import { ReactComponent as GithubIcon } from './icons/github.svg';
-import Experience from './landingpage/experience';
+import Experience from './landingpage/experience/experience';
 
 function App() {
   return (
