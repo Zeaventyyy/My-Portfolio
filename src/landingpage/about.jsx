@@ -7,7 +7,9 @@ function About() {
       <div className="flex flex-col sm:flex-row justify-center items-center h-full px-10 lg:w-[52rem] mx-auto ">
         <section className="flex flex-col items-center text-white text-justify">
           <div className="w-full flex justify-start mb-5">
-            <span className="text-2xl mr-10 font-medium ">About Me</span>
+            <span className="text-lg md:text-2xl mr-10 font-semibold ">
+              About Me
+            </span>
             <span className="flex-grow border-[1px] opacity-50 self-center" />
           </div>
 
