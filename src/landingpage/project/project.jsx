@@ -30,8 +30,8 @@ function Project() {
                     Savingz Tracker
                   </p>
                   <p className="bg-[#0e0f14] p-4 mt-4 rounded-md">
-                    A test web app for creating all your desired goals, then
-                    listing all your savings to achieve your goal
+                    A web application I created as a practice for Vue Js. It
+                    allows user to track all their goals and savings.
                   </p>
                   <ul className="uppercase font-medium text-sm mt-4">
                     <li className="inline pr-2">html</li>
@@ -52,14 +52,14 @@ function Project() {
                 <div className="absolute w-1/4">
                   <p className="text-lg md:text-xl font-semibold ">EyeSense</p>
                   <p className="bg-[#0e0f14] p-4 mt-4 rounded-md">
-                    An MCU Based Electronic Stick for Blind People with Android
-                    Application Remote Control Using Voice Command
+                    An android application I created for my thesis. It provides
+                    assistance for vision impared person by use of voice
+                    recognition and gestures.
                   </p>
                   <ul className="uppercase font-medium text-sm mt-4">
-                    <li className="inline pr-2">html</li>
-                    <li className="inline pr-2">css</li>
-                    <li className="inline pr-2">javascript</li>
-                    <li className="inline">vuejs</li>
+                    <li className="inline pr-2">C</li>
+                    <li className="inline pr-2">Java</li>
+                    <li className="inline pr-">XML</li>
                   </ul>
                 </div>
               </div>
