@@ -8,9 +8,29 @@ import { ReactComponent as LinkedInIcon } from './icons/linkedin.svg';
 import { ReactComponent as GithubIcon } from './icons/github.svg';
 import Experience from './landingpage/experience/experience';
 import Project from './landingpage/project/project';
+import Contact from './landingpage/contact/contact';
 
 function App() {
   const github = 'https://github.com/Zeaventyyy';
+
+  const section = [
+    {
+      id: 'about',
+      component: <About />,
+    },
+    {
+      id: 'experience',
+      component: <Experience />,
+    },
+    {
+      id: 'project',
+      component: <Project />,
+    },
+    {
+      id: 'contact',
+      component: <Contact />,
+    },
+  ];
 
   const [menu, setMenu] = useState(false);
 
@@ -27,18 +47,18 @@ function App() {
       <div className="flex flex-col background h-screen">
         <nav
           className="flex
-    flex-row
-    pl-8
-    pr-10
-    md:px-20
-    justify-between
-    items-center
-    py-8
-    text-white
-    uppercase
-    absolute
-    h-36
-    w-full"
+        flex-row
+        pl-8
+        pr-10
+        md:px-20
+        justify-between
+        items-center
+        py-8
+        text-white
+        uppercase
+        absolute
+        h-36
+        w-full"
         >
           <section className="">
             <a href="/">
@@ -164,12 +184,16 @@ function App() {
         </nav>
         <Main />
       </div>
-      <div id="about" className="backgroundAbout h-screen">
-        <About />
-      </div>
-      <div id="experience" className="background h-screen">
-        <Experience />
-      </div>
+      {section.map(({ id, component }, index) => (
+        <div
+          id={id}
+          className={`${
+            index % 2 ? 'background' : 'backgroundAbout'
+          } min-h-screen flex items-center justify-center"`}
+        >
+          {component}
+        </div>
+      ))}
       <div className="hidden md:block fixed bottom-0 left-20 ml-2">
         <ul className="flex flex-col justify-center items-center">
           <li className="mb-8 ">
@@ -186,9 +210,6 @@ function App() {
             <div className="h-40 w-0 border-2 opacity-50" />
           </li>
         </ul>
-      </div>
-      <div id="project" className="backgroundAbout h-screen">
-        <Project />
       </div>
     </div>
   );
