@@ -5,7 +5,7 @@ import Eyesense from '../../icons/eyesense.png';
 function Project() {
   return (
     <div className="h-full container mx-auto">
-      <div className="flex flex-col sm:flex-row justify-center items-center h-full px-10 lg:w-[52rem] mx-auto ">
+      <div className="flex flex-col sm:flex-row md:justify-center md:items-center h-full px-10 lg:w-[52rem] mx-auto ">
         <section className="flex flex-col w-full text-white justify-center md:justify-center md:h-full">
           <div className="flex justify-start mb-10 w-full">
             <p className="text-lg md:text-2xl mr-10 font-semibold ">
