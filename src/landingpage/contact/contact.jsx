@@ -23,7 +23,7 @@ function Contact() {
           </div>
           <div className="flex flex-col justify-center items-center mb-10 w-full">
             <a
-              className="email-link w-1/2 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black/50 hover:bg-black/70 md:py-4 md:text-lg md:px-10"
+              className="email-link w-1/2 flex items-center justify-center px-8 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-black/50 hover:bg-black/70 md:py-4 md:text-lg md:px-10"
               href="mailto:zeavenjoverttemanalastas@gmail.com"
               rel="noopener noreferrer"
               target="_blank"
