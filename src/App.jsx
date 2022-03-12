@@ -194,7 +194,7 @@ function App() {
           {component}
         </div>
       ))}
-      <div className="hidden md:block fixed bottom-0 left-20 ml-2">
+      <div className="hidden xl:block fixed bottom-0 left-20 ml-2">
         <ul className="flex flex-col justify-center items-center">
           <li className="mb-8 ">
             <a href="https://www.linkedin.com/in/zeaven-jovertte-manalastas-5297a7188/">
