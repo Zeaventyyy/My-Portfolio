@@ -3,7 +3,7 @@ import { Menu, Transition } from '@headlessui/react';
 import styles from './landingpage/navbar/navbar.module.css';
 import { ReactComponent as ZeavenLogo } from './icons/zeavenlogo.svg';
 import Main from './landingpage/main';
-import About from './landingpage/about';
+import About from './landingpage/about/about';
 import { ReactComponent as LinkedInIcon } from './icons/linkedin.svg';
 import { ReactComponent as GithubIcon } from './icons/github.svg';
 import Experience from './landingpage/experience/experience';
