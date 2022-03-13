@@ -16,8 +16,10 @@ function Project() {
           </div>
 
           <div className="flex flex-col">
-            <div className="flex flex-col xl:flex-row justify-between bg-slate-800 p-4 rounded-lg xl:bg-inherit xl:p-0 xl:rounded-none">
-              <div className="w-full xl:h-full xl:w-1/2 relative top-0 right-0">
+            <div
+              className={`${styles.container} flex flex-col xl:flex-row justify-between`}
+            >
+              <div className={styles.project}>
                 <img
                   src={SavingzTracker}
                   alt="Savingz Tracker"
@@ -34,7 +36,7 @@ function Project() {
                     A web application I created as a practice for Vue Js. It
                     allows user to track all their goals and savings.
                   </p>
-                  <ul className={`${styles.container}`}>
+                  <ul className={`${styles.item}`}>
                     <li className={styles.pill}>html</li>
                     <li className={styles.pill}>css</li>
                     <li className={styles.pill}>javascript</li>
@@ -44,8 +46,10 @@ function Project() {
               </div>
             </div>
             <p className="border-[1px] opacity-50 self-start w-3/5 mt-8" />
-            <div className="flex xl:flex-row-reverse flex-col justify-between xl:mt-16 mt-4 bg-slate-800 p-4 rounded-lg xl:bg-inherit xl:p-0 xl:rounded-none">
-              <div className="w-full xl:h-full xl:w-1/2 items-end relative top-0 right-0">
+            <div
+              className={`${styles.container} flex xl:flex-row-reverse flex-col justify-between xl:mt-16 mt-4`}
+            >
+              <div className={`${styles.project} items-end`}>
                 <img src={Eyesense} alt="Eyesense" className="rounded-md" />
                 <div className="h-full w-full absolute bg-black top-0 left-0 right-0 bottom-0 opacity-50 hover:bg-transparent transition duration-500" />
               </div>
@@ -59,7 +63,7 @@ function Project() {
                     assistance for vision impared person by use of voice
                     recognition and gestures.
                   </p>
-                  <ul className={`${styles.container} !justify-start`}>
+                  <ul className={`${styles.item} !justify-start`}>
                     <li className={styles.pill}>C</li>
                     <li className={styles.pill}>Java</li>
                     <li className={styles.pill}>XML</li>
