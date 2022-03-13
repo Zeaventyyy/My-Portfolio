@@ -7,7 +7,7 @@ function Experience() {
   return (
     <div className="h-full container mx-auto">
       <div className="flex flex-col sm:flex-row justify-center items-center h-full px-10 lg:w-[52rem] mx-auto ">
-        <section className="flex flex-col w-full text-white justify-center md:justify-start md:h-60">
+        <section className="flex flex-col w-full text-white justify-center md:justify-start">
           <div className="flex justify-start mb-5 w-full">
             <p className="text-lg md:text-2xl mr-10 font-semibold ">
               Where I’ve Worked
@@ -15,7 +15,7 @@ function Experience() {
             <p className="flex-grow border-[1px] opacity-50 self-center" />
           </div>
           <div className="flex flex-col items-center md:flex-row md:items-start w-full  ">
-            <div className="flex w-full grow flex-row md:flex-col items-start md:pl-6 md:mb-0 md:w-[17.25rem] mb-4 ">
+            <div className="flex w-full grow flex-row md:flex-col items-start md:pl-6 md:mb-0 md:w-[15.75rem] mb-4 ">
               <button
                 className={`${experience === 'cmai' ? styles.active : ''} ${
                   styles.btn
@@ -39,43 +39,65 @@ function Experience() {
             </div>
 
             {experience === 'cmai' ? (
-              <div className="md:pl-10 animate-fade-in-down">
+              <div className="md:pl-10 animate-fade-in-down md:w-3/4">
                 <p className="text-lg md:text-xl font-semibold mb-1">
                   Associate Android Developer
                 </p>
                 <p className="font-normal">Clearmind Algorithmics Inc.</p>
                 <p className="font-normal">November 2019 - March 2021</p>
+
                 <div className="flex flex-col">
                   <ul className="list-disc list-outside ml-4 ">
                     <li className="mt-4 mb-2">
-                      Worked with a team to build new applications.
+                      Worked with a team that consist of 4 members to build new
+                      applications and provided services to our company’s
+                      clients.
                     </li>
                     <li>
-                      Maintained existing applications (USSC Super Service App,
-                      myTMC).
+                      Maintained and helped adding new features to their
+                      existing applications (USSC Super Service App, myTMC,
+                      Super Negosyo, Super Ayuda).
                     </li>
                   </ul>
-                  <p className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
+
+                  <div className="flex flex-wrap gap-2 mt-4 justify-end">
+                    <div className={styles.pill}>Kotlin</div>
+                    <div className={styles.pill}>Java</div>
+                    <div className={styles.pill}>Firebase</div>
+                    <div className={styles.pill}>Retrofit</div>
+                    <div className={styles.pill}>Cache Manager</div>
+                    <div className={styles.pill}>Git</div>
+                  </div>
+
+                  <span className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
                 </div>
               </div>
             ) : null}
             {experience === 'orangeApps' ? (
-              <div className="md:pl-10 grow animate-fade-in-down">
+              <div className="md:pl-10 animate-fade-in-down md:w-3/4">
                 <p className="text-lg md:text-xl font-semibold mb-1">
                   Frontend Developer/Quality Assurance Intern
                 </p>
                 <p className="font-normal">OrangeApps</p>
-                <p className="font-normal">January 2019 - March 2019</p>
+                <p className="font-normal">November 2018 - March 2019</p>
                 <div className="flex flex-col">
                   <ul className="list-disc list-outside ml-4">
                     <li className="mt-4 mb-2">
-                      Maintained and checked all the possible bugs in projects
-                      to be fixed.
+                      Conducted manual testing to check all the possible bugs in
+                      a project and provided all the test scenarios used in
+                      testing
                     </li>
                     <li>
-                      Designed and built prototypes for company’s new projects.
+                      Designed and built 2d prototypes for company&apos; new
+                      project using Adobe XD (specifically for MedDepot)
                     </li>
                   </ul>
+                  <div className="flex flex-wrap gap-2 mt-4 justify-end">
+                    <div className={styles.pill}>HTML</div>
+                    <div className={styles.pill}>CSS</div>
+                    <div className={styles.pill}>Adobe XD</div>
+                    <div className={styles.pill}>Git</div>
+                  </div>
                   <span className="border-[1px] opacity-50 self-end w-1/2 mt-8  " />
                 </div>
               </div>
