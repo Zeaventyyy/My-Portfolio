@@ -1,0 +1,11 @@
+.description {
+  @apply xl:bg-[#0e0f14]/75 xl:p-4 mt-4 rounded-md;
+}
+
+.container {
+  @apply flex flex-wrap gap-2 mt-4 justify-end;
+}
+
+.container .pill {
+  @apply p-2 bg-black/25 rounded-md text-sm uppercase;
+}
