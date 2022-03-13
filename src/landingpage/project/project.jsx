@@ -5,7 +5,7 @@ import styles from './project.module.css';
 
 function Project() {
   return (
-    <div className="h-full container mx-auto">
+    <div className="h-full container mx-auto lg:mt-0 mt-52">
       <div className="flex flex-col xl:flex-row xl:justify-center xl:items-center h-full px-10 lg:w-[52rem] mx-auto ">
         <section className="flex flex-col w-full text-white justify-center xl:justify-center xl:h-full">
           <div className="flex justify-start mb-10 w-full">
