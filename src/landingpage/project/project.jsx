@@ -1,6 +1,7 @@
 import React from 'react';
 import SavingzTracker from '../../icons/savingztracker.png';
 import Eyesense from '../../icons/eyesense.png';
+import styles from './project.module.css';
 
 function Project() {
   return (
@@ -29,15 +30,15 @@ function Project() {
                   <p className="text-lg xl:text-xl font-semibold mt-4 xl:mt-0 ">
                     Savingz Tracker
                   </p>
-                  <p className="bg-[#0e0f14] p-4 mt-4 rounded-md">
+                  <p className={styles.description}>
                     A web application I created as a practice for Vue Js. It
                     allows user to track all their goals and savings.
                   </p>
-                  <ul className="uppercase font-medium text-sm mt-4">
-                    <li className="inline pr-2">html</li>
-                    <li className="inline pr-2">css</li>
-                    <li className="inline pr-2">javascript</li>
-                    <li className="inline">vuejs</li>
+                  <ul className={`${styles.container}`}>
+                    <li className={styles.pill}>html</li>
+                    <li className={styles.pill}>css</li>
+                    <li className={styles.pill}>javascript</li>
+                    <li className={styles.pill}>vuejs</li>
                   </ul>
                 </div>
               </div>
@@ -53,15 +54,15 @@ function Project() {
                   <p className="text-lg xl:text-xl font-semibold mt-4 xl:mt-0 ">
                     EyeSense
                   </p>
-                  <p className="bg-[#0e0f14] p-4 mt-4 rounded-md">
+                  <p className={styles.description}>
                     An android application I created for my thesis. It provides
                     assistance for vision impared person by use of voice
                     recognition and gestures.
                   </p>
-                  <ul className="uppercase font-medium text-sm mt-4">
-                    <li className="inline pr-2">C</li>
-                    <li className="inline pr-2">Java</li>
-                    <li className="inline pr-2">XML</li>
+                  <ul className={`${styles.container} !justify-start`}>
+                    <li className={styles.pill}>C</li>
+                    <li className={styles.pill}>Java</li>
+                    <li className={styles.pill}>XML</li>
                   </ul>
                 </div>
               </div>
