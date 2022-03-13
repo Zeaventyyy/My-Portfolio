@@ -3,9 +3,17 @@
 }
 
 .container {
+  @apply bg-slate-800 p-4 rounded-lg xl:bg-inherit xl:p-0 xl:rounded-none;
+}
+
+.project {
+  @apply w-full xl:h-full xl:w-1/2 relative top-0 right-0;
+}
+
+.item {
   @apply flex flex-wrap gap-2 mt-4 justify-end;
 }
 
-.container .pill {
+.item .pill {
   @apply p-2 bg-black/25 rounded-md text-sm uppercase;
 }
