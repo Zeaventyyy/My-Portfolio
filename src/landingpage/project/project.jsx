@@ -5,17 +5,17 @@ import Eyesense from '../../icons/eyesense.png';
 function Project() {
   return (
     <div className="h-full container mx-auto">
-      <div className="flex flex-col xl:flex-row xl:justify-center xl:items-center h-full px-10 xl:w-[52rem] mx-auto ">
+      <div className="flex flex-col xl:flex-row xl:justify-center xl:items-center h-full px-10 lg:w-[52rem] mx-auto ">
         <section className="flex flex-col w-full text-white justify-center xl:justify-center xl:h-full">
           <div className="flex justify-start mb-10 w-full">
-            <p className="text-lg xl:text-2xl mr-10 font-semibold ">
+            <p className="text-lg lg:text-2xl mr-10 font-semibold ">
               Some of my Projects
             </p>
             <p className="flex-grow border-[1px] opacity-50 self-center" />
           </div>
 
           <div className="flex flex-col">
-            <div className="flex flex-col xl:flex-row justify-between bg-slate-800 p-4 rounded-lg xl:bg-inherit lg:p-0 xl:rounded-none">
+            <div className="flex flex-col xl:flex-row justify-between bg-slate-800 p-4 rounded-lg xl:bg-inherit xl:p-0 xl:rounded-none">
               <div className="w-full xl:h-full xl:w-1/2 relative top-0 right-0">
                 <img
                   src={SavingzTracker}
