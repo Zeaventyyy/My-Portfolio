@@ -3,11 +3,11 @@
 }
 
 .container {
-  @apply bg-slate-800 p-4 rounded-lg xl:bg-inherit xl:p-0 xl:rounded-none;
+  @apply bg-slate-800 p-4 rounded-lg xl:bg-inherit xl:p-0 xl:rounded-none overflow-hidden;
 }
 
 .project {
-  @apply w-full xl:h-full xl:w-1/2 relative top-0 right-0;
+  @apply w-full xl:h-full  rounded-lg overflow-hidden xl:w-1/2 relative top-0 right-0;
 }
 
 .item {
