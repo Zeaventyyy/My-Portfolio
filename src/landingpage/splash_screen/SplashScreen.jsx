@@ -10,7 +10,7 @@ function SplashScreen() {
   return (
     isVisible && (
       <div className={styles.splashScreen}>
-        <ZeavenLogo className="animate-ping-slow" />
+        <ZeavenLogo className="animate-pulse" />
       </div>
     )
   );
