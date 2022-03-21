@@ -3,6 +3,14 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+        'fade-out': {
+          '0%': {
+            opacity: '1',
+          },
+          '100%': {
+            opacity: '0',
+          },
+        },
         'fade-in-down': {
           '0%': {
             opacity: '0',
@@ -25,8 +33,9 @@ module.exports = {
         },
       },
       animation: {
-        'fade-in-down': 'fade-in-down 5s ease-out',
+        'fade-in-down': 'fade-in-down 2s ease-out',
         'ping-slow': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
+        'fade-out': 'fade-out 0.5s ease-out 3.5s',
       },
     },
   },
