@@ -9,6 +9,7 @@ import { ReactComponent as GithubIcon } from './icons/github.svg';
 import Experience from './landingpage/experience/experience';
 import Project from './landingpage/project/project';
 import Contact from './landingpage/contact/contact';
+import SplashScreen from './landingpage/splash_screen/SplashScreen';
 
 function App() {
   const github = 'https://github.com/Zeaventyyy';
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <div className="App ">
+      <SplashScreen className="" />
       <div className="flex flex-col background h-screen">
         <nav
           className="flex
