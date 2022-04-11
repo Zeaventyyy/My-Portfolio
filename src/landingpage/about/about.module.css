@@ -1,0 +1,42 @@
+.aboutMainContainer {
+  @apply h-full container mx-auto;
+}
+.aboutContainer {
+  @apply flex flex-col sm:flex-row justify-center items-center h-full px-10 lg:w-[52rem] mx-auto;
+}
+
+.aboutSection {
+  @apply flex flex-col items-center text-white text-justify;
+}
+
+.aboutTitleContainer {
+  @apply w-full flex justify-start mb-5;
+}
+
+.aboutLabel {
+  @apply text-lg md:text-2xl mr-10 font-semibold;
+}
+
+.line {
+  @apply flex-grow border-[1px] opacity-50 self-center;
+}
+
+.introduction {
+  @apply text-sm sm:text-base font-medium;
+}
+
+.aboutLogoSection {
+  @apply sm:flex self-end sm:items-center -mr-2 mt-4 text-white sm:h-full fill-white;
+}
+
+.logo {
+  @apply inline
+    transform
+    hover:rotate-90
+    transition
+    duration-500
+    w-20
+    h-20
+    sm:w-[16rem]
+    sm:h-[16rem];
+}
