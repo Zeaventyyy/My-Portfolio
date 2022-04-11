@@ -13,7 +13,7 @@
   @apply w-full flex justify-start mb-5;
 }
 
-.aboutLabel {
+.aboutTitle {
   @apply text-lg md:text-2xl mr-10 font-semibold;
 }
 

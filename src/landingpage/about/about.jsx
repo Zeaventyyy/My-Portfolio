@@ -8,7 +8,7 @@ function About() {
       <div className={styles.aboutContainer}>
         <section className={styles.aboutSection}>
           <div className={styles.aboutTitleContainer}>
-            <span className={styles.aboutLabel}>About Me</span>
+            <span className={styles.aboutTitle}>About Me</span>
             <span className={styles.line} />
           </div>
 
