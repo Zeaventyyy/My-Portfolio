@@ -1,3 +1,15 @@
+.experienceMainContainer {
+  @apply min-h-screen mx-auto;
+}
+
+.experienceContainer {
+  @apply flex flex-col sm:flex-row justify-center items-center px-10 lg:w-[52rem] mx-auto mt-[25vh] mb-[25vh];
+}
+
+.experienceSection {
+  @apply flex flex-col w-full text-white justify-start md:justify-start;
+}
+
 .btn {
   @apply hover:bg-black/25
     hover:border-white
@@ -29,4 +41,8 @@
 
 .pill {
   @apply p-2 bg-black/25 rounded-md text-sm;
+}
+
+.experience-list {
+  @apply !mb-2;
 }
