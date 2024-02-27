@@ -13,15 +13,18 @@ function About() {
           </div>
 
           <p className={`${styles.introduction} pb-3`}>
-            Hello! I&apos;m Zeaven Jovertte Manalastas and I enjoy building
-            things that live on the internet. My web development journey started
-            way back 2019 when I was an intern. I stopped for the meantime and
-            become an android developer for a year and a 5 months.
+            Greetings! I&apos;m Zeaven Jovertte Manalastas, and I find joy in
+            both creating and deconstructing digital entities on the internet.
+            My voyage through web development and quality assurance began in
+            2019 during my internship. While I briefly diverted to explore
+            Android development for a year and five months, my heart always
+            gravitated towards the dynamic world of web development.
           </p>
 
           <p className={styles.introduction}>
-            Fast-forward to today, I&apos;ve been studying front end frameworks
-            and libraries to use them on my future projects and works.
+            Fast-forward to today, I&apos;ve been diligently exploring front-end
+            frameworks, libraries, and quality assurance tools and technologies,
+            eager to incorporate them into my upcoming projects and endeavors.
           </p>
         </section>
 
