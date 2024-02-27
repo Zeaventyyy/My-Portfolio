@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Main() {
-  const job = 'Software Engineer';
+  const job = 'IT Professional';
   const name = 'Zeaven Manalastas';
   return (
     <div className="flex justify-center items-center h-full">
